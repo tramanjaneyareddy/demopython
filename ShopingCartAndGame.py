@@ -35,13 +35,21 @@ while True:
 
      elif no == 3:
          dis()
+     elif no == 4:
+       t=0
+       q=0
+       p={'a':10,'b':20,'c':30}
 
-
-
+       for x,y in cart.items():
+         print(x,y)
+         for z, m in p.items():
+              if z==x:
+                  q=y*m
+         t=t+q
+       print('total price of items:',t)
+       print('total price',p)
      elif no !=  0:
          print('please enter valid no')
          no=int(input('enter no:'))
      else:
          sys.exit()
-
-
